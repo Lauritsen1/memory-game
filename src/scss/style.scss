@@ -14,6 +14,43 @@
   background-color: whitesmoke;
 }
 
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  .modal__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    height: 10em;
+    width: 20em;
+    background-color: whitesmoke;
+
+    .modal__restart-btn {
+      height: 3em;
+      width: 8em;
+      background-color: transparent;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+
+    .modal__restart-btn:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
 .board {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
