@@ -103,7 +103,7 @@
   color: whitesmoke;
 
   h1 {
-    font-size: 80%;
+    font-size: 100%;
   }
 }
 
@@ -120,13 +120,6 @@
 @media only screen and (min-width: 375px) {
   .board {
     max-width: 800px;
-  }
-
-  .card-back {
-  
-    h1 {
-      font-size: 1.5rem;
-    }
   }
 
 }
