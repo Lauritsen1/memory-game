@@ -54,13 +54,16 @@
 .board {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1em;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0.5rem;
 }
 
 .card {
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 1/1;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -98,6 +101,10 @@
   align-items: center;
   background-color: #252526;
   color: whitesmoke;
+
+  h1 {
+    font-size: 80%;
+  }
 }
 
 .card-front {
@@ -108,4 +115,18 @@
     height: 100%;
     width: 100%;
   }
+}
+
+@media only screen and (min-width: 375px) {
+  .board {
+    max-width: 830px;
+  }
+
+  .card-back {
+  
+    h1 {
+      font-size: 100%;
+    }
+  }
+
 }
