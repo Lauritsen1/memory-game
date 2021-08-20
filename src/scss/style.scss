@@ -56,6 +56,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.5rem;
   width: 100%;
+  -webkit-aspect-ratio: 1/1;
   aspect-ratio: 1/1;
   margin: 0.5rem;
 }
@@ -63,6 +64,7 @@
 .card {
   background-color: transparent;
   width: 100%;
+  -webkit-aspect-ratio: 1/1;
   aspect-ratio: 1/1;
   perspective: 1000px;
   cursor: pointer;
