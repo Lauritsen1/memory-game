@@ -56,13 +56,13 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.5rem;
   width: 100%;
+  aspect-ratio: 1/1;
   margin: 0.5rem;
 }
 
 .card {
   background-color: transparent;
   width: 100%;
-  max-width: 200px;
   aspect-ratio: 1/1;
   perspective: 1000px;
   cursor: pointer;
@@ -119,7 +119,7 @@
 
 @media only screen and (min-width: 375px) {
   .board {
-    max-width: 830px;
+    max-width: 800px;
   }
 
   .card-back {
